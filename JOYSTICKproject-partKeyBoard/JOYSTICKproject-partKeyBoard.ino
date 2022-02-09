@@ -12,7 +12,6 @@ void setup() {
 }
 
 void loop() {
-  int brake=0;
   String receive = Serial1.readStringUntil('|'); // |가 나올 때까지 패킷 받음
   int _direction=receive.toInt();
   switch (_direction) {  
